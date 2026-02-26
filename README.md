@@ -1,149 +1,23 @@
 Customer Shopping Behavior Analysis
 
-📊 A complete end-to-end data analytics project built using Python, SQL (PostgreSQL), and Power BI to understand customer purchasing patterns and generate business insights.
+This project is an end-to-end data analytics solution designed to study customer purchasing patterns by examining 3,900 individual transactions. It uses Python for data cleaning and exploration, PostgreSQL for structured business analysis, and Power BI for creating an interactive visual dashboard. The primary objective of the project is to understand how different customers behave, what influences their purchases, and how companies can use this information to make stronger business decisions.
 
-⭐ Project Overview
+Project Description
 
-This project analyzes 3,900 customer transactions to understand how shoppers behave across different demographics, product categories, seasons, shipping types, and subscription statuses.
-The goal is to help businesses make smarter data-driven decisions in marketing, pricing, loyalty programs, and product strategy.
+The dataset used in this project contains 18 different attributes, including demographic details such as age, gender, and location, along with transaction-related information like product category, purchase amount, seasonal trends, shipping preferences, subscription status, and review ratings. This rich variety of data makes it possible to study how customers interact with products, how often they purchase, and which factors impact their purchasing decisions the most.
 
-🧰 Tech Stack & Tools Used
-Languages
+Python is used to prepare and clean the data. The preprocessing includes handling missing values, formatting the dataset, creating new useful features such as age groups and purchase frequency, and ensuring that the dataset is ready for further analysis. Once the data is cleaned, it is loaded into PostgreSQL, where detailed SQL queries are written to extract insights. These SQL queries reveal patterns related to revenue generation, high-spending customers, top-rated and most-purchased products, discount dependency, repeat buying behavior, and subscription trends. The insights also show how different shipping types affect order value and how various age groups contribute to overall sales.
 
-Python (Data Cleaning, EDA, Feature Engineering)
+To make the findings easy to understand, a Power BI dashboard is created. This dashboard visually presents customer demographics, spending trends, category-wise performance, revenue contributions, and customer segmentation. It helps viewers quickly identify patterns and understand how different customer groups behave.
 
-SQL (PostgreSQL) (Business-level Analysis & Insights)
+Purpose of the Project
 
-DAX (Power BI) (Dashboard calculations)
+This project was created to gain practical experience in performing real-world data analysis that involves cleaning data, writing SQL queries, and building dashboards. It demonstrates how Python, SQL, and Power BI can be combined to extract meaningful business insights. The goal is to help organizations understand customers better so they can improve marketing strategies, optimize pricing, strengthen loyalty programs, and increase overall revenue.
 
-Libraries (Python)
+Tools and Technologies Used
 
-pandas
+The project is built using Python as the main language for dataset preparation, PostgreSQL as the database for performing meaningful business queries, and Power BI for visualizing the results. Libraries such as pandas and numpy help process the data efficiently, while PostgreSQL queries help reveal spending behavior, discount patterns, product popularity, and demographic trends. Power BI converts the findings into clear charts and dashboards that communicate insights effectively.
 
-numpy
+Conclusion
 
-matplotlib / seaborn (optional)
-
-sqlalchemy
-
-psycopg2
-
-Tools
-
-PostgreSQL – Querying & analytical processing
-
-Power BI – Interactive dashboard creation
-
-Jupyter Notebook / VS Code – Development environment
-
-GitHub – Version control & project documentation
-
-🗂️ Dataset Description
-
-Rows: 3,900
-
-Columns: 18
-
-Includes:
-
-Customer demographics (age, gender, location)
-
-Purchase details (product, category, amount, season)
-
-Behavior indicators (discount applied, shipping type, review rating)
-
-Subscription status and previous purchases
-
-🔍 Key Project Components
-1. Data Preprocessing (Python)
-
-Handling missing values
-
-Categorical encoding
-
-Feature engineering (age groups, purchase frequency)
-
-Standardizing column naming
-
-Exporting cleaned data to PostgreSQL
-
-2. SQL Business Analysis
-
-Insights extracted:
-
-Revenue by gender
-
-Most discounted products
-
-Repeat customers vs new customers
-
-High-spending discount users
-
-Top-rated products
-
-Top 3 products by category
-
-Subscriber vs non-subscriber analysis
-
-Revenue by age group
-
-Shipping type impact on purchase amount
-
-3. Power BI Dashboard
-
-Visualized insights through:
-
-Revenue charts
-
-Age-group analysis
-
-Category sales
-
-Subscription trends
-
-Customer segmentation
-
-🎯 Why This Project Was Created
-
-This project was built to:
-
-Understand real-world customer purchasing behavior
-
-Learn end-to-end data analytics workflows
-
-Apply Python + SQL + Power BI together
-
-Generate actionable insights for business decision-making
-
-Strengthen data analytics and BI skills for industry use
-
-📈 Key Insights
-
-Young adults contribute the highest revenue
-
-Express shipping users spend more
-
-Certain products depend heavily on discounts
-
-Loyal customers form the largest segment
-
-Subscribers and non-subscribers behave differently
-
-📦 Project Structure
-├── data/                     # raw & cleaned datasets
-├── notebooks/                # Python EDA & preprocessing
-├── sql/                      # SQL queries used
-├── dashboard/                # Power BI files
-├── README.md                 # project documentation
-└── report/                   # project report
-🚀 How to Run the Project
-
-Clone the repository
-
-Install dependencies
-
-Load cleaned data into PostgreSQL
-
-Run SQL queries for insights
-
-Open Power BI dashboard to view results
+Overall, this project demonstrates the complete journey of working with raw data and transforming it into valuable insights. It highlights the importance of data analytics in understanding customers and making informed business decisions. It also shows how combining multiple tools—Python, SQL, and Power BI—creates a powerful analytical workflow suitable for academic use, portfolio building, or industry applications.
